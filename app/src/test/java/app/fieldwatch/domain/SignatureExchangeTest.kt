@@ -271,7 +271,7 @@ class SignatureExchangeTest {
         presets.forEach { preset ->
             assertTrue(preset.id, preset.isBuiltIn())
         }
-        assertEquals(6, presets.size)
+        assertEquals(7, presets.size)
         assertEquals("watched", presets.first { it.name == "Watched only" }.id)
         assertTrue(presets.none { it.id == "cameras" })
         assertTrue(presets.none { it.id == "trackers" })

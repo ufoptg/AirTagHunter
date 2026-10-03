@@ -403,10 +403,10 @@ object DefaultCatalog {
         colorIndex = Hue.FIND_MY,
         kind = SignatureClass.FINDER,
         matchAny = true,
-        notes = "Apple AirTag or Find My network accessory advertising Offline Finding " +
-            "(company 0x004C, type 0x12, length 0x19). iPhones that also send Continuity " +
-            "stay on Apple Device — OF alone on a Continuity radio is not labeled AirTag. " +
-            "Separated vs near-owner is bit 2 of the status byte. Addresses rotate ~daily.",
+        notes = "Apple AirTag or Find My network accessory advertising Offline Finding. " +
+            "iPhones that also send Continuity stay on Apple Device — OF alone on a Continuity " +
+            "radio is not labeled AirTag. Separated vs near-owner comes from the status byte. " +
+            "Addresses rotate ~daily.",
         builtIn = true,
         decode = CatalogDecodes.findMyOffline,
         rules = listOf(
@@ -425,7 +425,7 @@ object DefaultCatalog {
         kind = SignatureClass.FINDER,
         matchAny = true,
         notes = "Samsung SmartTag / SmartTag+ item finder (name or FD5A). Bare Samsung " +
-            "company ID 0x0075 is not enough — that hits phones and buds. Addresses often rotate.",
+            "company ID alone is not enough — that hits phones and buds. Addresses often rotate.",
         builtIn = true,
         rules = listOf(
             name("SmartTag"),

@@ -892,7 +892,7 @@
             "peerWindowSec": 60,
             "clusterByOui": false,
             "sequentialMac": false,
-            "notes": "Apple AirTag or Find My network accessory advertising Offline Finding (company 0x004C, type 0x12, length 0x19). iPhones that also send Continuity stay on Apple Device \u2014 OF alone on a Continuity radio is not labeled AirTag. Separated vs near-owner is bit 2 of the status byte. Addresses rotate ~daily.",
+            "notes": "Apple AirTag or Find My network accessory advertising Offline Finding. iPhones that also send Continuity stay on Apple Device \u2014 OF alone on a Continuity radio is not labeled AirTag. Separated vs near-owner comes from the status byte. Addresses rotate ~daily.",
             "attentionNote": "",
             "builtIn": true,
             "kind": "FINDER",
@@ -56211,7 +56211,7 @@
             "peerWindowSec": 60,
             "clusterByOui": false,
             "sequentialMac": false,
-            "notes": "Samsung SmartTag / SmartTag+ item finder (name or FD5A). Bare Samsung company ID 0x0075 is not enough \u2014 that hits phones and buds. Addresses often rotate.",
+            "notes": "Samsung SmartTag / SmartTag+ item finder (name or FD5A). Bare Samsung company ID alone is not enough \u2014 that hits phones and buds. Addresses often rotate.",
             "attentionNote": "",
             "builtIn": true,
             "kind": "FINDER"

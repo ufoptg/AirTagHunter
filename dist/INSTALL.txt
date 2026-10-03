@@ -1,0 +1,29 @@
+AirTagHunter — download the APK from GitHub Actions
+===================================================
+
+Package: app.airtaghunter
+Needs Android 10+ (API 29+).
+
+This folder keeps the stock Fieldwatch signature catalog JSON used by unit tests
+and Settings → Update stock catalog from GitHub. It does not ship a prebuilt
+AirTagHunter APK.
+
+Get AirTagHunter.apk
+--------------------
+1. GitHub → Actions → Android CI → latest successful run
+2. Artifacts → airtaghunter-debug-apk → AirTagHunter.apk
+3. Or Releases (after a v* tag)
+
+Install
+-------
+Open AirTagHunter.apk from Files. Allow install from that app if asked.
+Play Protect may warn that it is not from Play — expected for a debug build.
+
+Before first launch: Location ON, Wi-Fi ON, Bluetooth ON.
+Grant Location, Nearby Wi-Fi, Nearby devices / Bluetooth, Notifications.
+
+New installs filter Live to Finder tags (BLE). Filters → All traffic shows everything.
+Tap a detection → Hunt for relative RSSI while walking.
+
+Fork notes: ../FORK.md
+Upstream Fieldwatch: https://github.com/OffGridPete/Fieldwatch
